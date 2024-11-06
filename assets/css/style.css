@@ -1,0 +1,471 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1c1c1c, #333);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+nav ul.nav-links li {
+    margin: 0 10px;
+}
+
+nav ul.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul.nav-links li a:hover {
+    color: #4CAF50;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+}
+
+@media (max-width: 768px) {
+    nav ul.nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Seções */
+.banner {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #2a2a2a, #4e4e4e);
+    color: #fff;
+}
+
+.destaques {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.destaque-item {
+    margin: 10px 0;
+}
+
+#map {
+    height: 300px;
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(135deg, #1c1c1c, #333);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+    bottom: 0;
+    width: 100%;
+    z-index: 10000;
+    position: fixed;
+}
+
+/* Estilo para a Seção de Apresentação */
+.apresentacao {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+.apresentacao h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Seção de Equipe */
+.equipe {
+    padding: 20px;
+    text-align: center;
+}
+
+.equipe-fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.equipe-membro {
+    width: 150px;
+    text-align: center;
+}
+
+.equipe-membro img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.equipe-membro p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Linha do Tempo */
+.linha-do-tempo {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.linha-do-tempo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo da Seção de Serviços */
+.servicos {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+.servicos h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do Accordion */
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.accordion-content.active {
+    padding: 15px;
+}
+
+.accordion-content img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.accordion-content p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Galeria de Produtos */
+.produtos {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+.produtos-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produto-item {
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+}
+
+.produto-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produto-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.produto-item p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilo da Página de Orçamento */
+.orcamento {
+    padding: 80px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+.orcamento form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.orcamento label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.orcamento input,
+.orcamento select,
+.orcamento textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    width: 100%;
+}
+
+.orcamento button {
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.orcamento button:hover {
+    background-color: #000000;
+}
+
+/* Mensagem de Confirmação */
+.mensagem-confirmacao {
+    font-size: 18px;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* Estilo da Página de Contato */
+.contato {
+    padding: 80px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+.info-contato p {
+    font-size: 18px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.contato input,
+.contato textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    width: 100%;
+}
+
+.contato button {
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #000000;
+}
+
+.mensagem-confirmacao {
+    font-size: 18px;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    margin: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+.mapa iframe {
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Estilos do botão "Peça seu orçamento" */
+.wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .wrapper a {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper a:hover {
+    background-color: #ffa600;
+    color: #333;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efeito de destaque no botão */
+  .wrapper a span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .wrapper a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%) rotate(45deg);
+    transition: transform 0.5s ease;
+    z-index: 0;
+  }
+  
+  .wrapper a:hover::before {
+    transform: translateX(100%) rotate(45deg);
+  }
+  

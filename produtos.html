@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos - hgstore</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">hgstore</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="orcamentos.html">Orçamentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Galeria de Produtos -->
+  <main>
+    <section class="produtos">
+      <h1>Nossos Produtos</h1>
+      <p>Confira nossa coleção exclusiva de produtos com qualidade e estilo.</p>
+
+      <div class="produtos-galeria">
+        <!-- Produto 1 -->
+        <div class="produto-item">
+          <img src="./assets/images/roupas.webp" alt="Produto 1">
+          <h3>Roupas</h3>
+          <p>Suéter para climas frios, mantendo o estilo.</p>
+          <button onclick="openModal('modal1')">Ver Detalhes</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto-item">
+          <img src="assets/images/bones.webp" alt="Produto 2">
+          <h3>Bonés</h3>
+          <p>Bonés diferenciados para você se destacar na multidão, combinando com as outras peça de roupas da loja.</p>
+          <button onclick="openModal('modal2')">Ver Detalhes</button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="produto-item">
+          <img src="assets/images/tenis.jpeg" alt="Produto 3">
+          <h3>Tênis</h3>
+          <p>Tênis Mizuno primeira linha, mantendo a alta qualidade do mercado para os nossos prezados clientes.</p>
+          <button onclick="openModal('modal3')">Ver Detalhes</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modais de Detalhes dos Produtos -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2>Produto 1</h2>
+      <img src="./assets/images/roupas.webp" alt="Produto 1 Detalhes">
+      <p> Os suéteres da loja combinam **conforto e estilo**, feitos com materiais de alta qualidade, como algodão e lã, que garantem aquecimento e respirabilidade. Oferecemos designs clássicos e modernos, em uma variedade de cores neutras e vibrantes, além de texturas e padronagens que se adaptam a qualquer estilo. Os suéteres são sustentáveis e duráveis, com acabamentos exclusivos como punhos canelados e zíperes. Estão disponíveis em tamanhos do PP ao GG, garantindo o caimento perfeito para todos os clientes.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2>Produto 2</h2>
+      <img src="assets/images/bones.webp" alt="Produto 2 Detalhes">
+      <p>Nossos bonés são projetados com estilo e funcionalidade em mente. Feitos de materiais duráveis como algodão e poliéster, possuem ajuste confortável e fechamento traseiro ajustável, adequando-se a diferentes tamanhos. A variedade de cores e estampas permite escolher entre modelos mais discretos ou chamativos. São perfeitos tanto para proteção contra o sol quanto para um toque moderno no visual diário, com design que combina com qualquer look.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h2>Produto 3</h2>
+      <img src="assets/images/tenis.jpeg" alt="Produto 3 Detalhes">
+      <p>Nossos tênis combinam estilo, conforto e durabilidade para todos os gostos e ocasiões. Com designs variados que vão do casual ao esportivo, oferecemos modelos com materiais de alta qualidade, incluindo cabedal respirável, solado resistente e opções com amortecimento para absorção de impacto. Disponíveis em diversas cores e tamanhos, nossos tênis são ideais para atividades do dia a dia, academia, corridas ou passeios, sempre focando na melhor experiência e segurança ao caminhar.</p>
+    </div>
+  </div>
+
+  <!-- JavaScript para o Modal -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
